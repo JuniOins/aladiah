@@ -1,35 +1,33 @@
-# Utiliser une image PHP officielle avec FPM
+# Image PHP officielle avec FPM
 FROM php:8.2-fpm
 
 # Installer les dépendances système nécessaires
 RUN apt-get update && apt-get install -y \
-    git \
-    unzip \
-    libpq-dev \
-    libonig-dev \
-    libxml2-dev \
-    libzip-dev \
-    zip \
-    && docker-php-ext-install pdo pdo_pgsql mbstring bcmath xml zip
+    git unzip libzip-dev libonig-dev libpng-dev libjpeg-dev libfreetype6-dev \
+    && docker-php-ext-install pdo mbstring bcmath zip gd \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Installer Composer
 COPY --from=composer:2.8 /usr/bin/composer /usr/bin/composer
 
-# Définir le répertoire de travail
+# Répertoire de travail
 WORKDIR /var/www/html
 
-# Copier les fichiers du projet
+# Copier tous les fichiers
 COPY . .
 
 # Installer les dépendances PHP
 RUN composer install --no-dev --optimize-autoloader
 
-# Donner les droits sur storage et bootstrap/cache
+# Droits sur storage et bootstrap/cache
 RUN chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache
 
-# Exposer le port utilisé par Laravel
-EXPOSE 8000
+# Copier la configuration Nginx (fichier à créer)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Commande pour démarrer Laravel (Render va utiliser APP_KEY défini dans les env)
-CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8000
+# Exposer le port utilisé par Render
+EXPOSE 10000
+
+# Démarrer PHP-FPM + Nginx
+CMD php-fpm -D && nginx -g "daemon off;"

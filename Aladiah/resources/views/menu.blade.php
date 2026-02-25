@@ -201,7 +201,7 @@ footer .social-icons a:hover{color:var(--gold);}
 
 <nav>
     <div class="logo">
-        <img src="/images/logo/02 LOGO BAR-RESTO ALADIAH-min.jpg" alt="Logo ALADIAH">
+        <img src="/images/logo/02 LOGO BAR-RESTO ALADIAH -min.jpg" alt="Logo ALADIAH">
         <span class="logo-text">ALADIAH Restaurant</span>
     </div>
     <div class="hamburger"><i class="fas fa-bars"></i></div>

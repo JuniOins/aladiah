@@ -136,14 +136,14 @@ nav{
 .hero::before{
     background-image:
         linear-gradient(rgba(15,47,37,0.7), rgba(15,47,37,0.7)),
-        url('/images/bomi.png');
+        url('/images/bomi-min.png');
     animation: fade1 10s infinite;
 }
 
 .hero::after{
     background-image:
         linear-gradient(rgba(15,47,37,0.7), rgba(15,47,37,0.7)),
-        url('/images/chef-cusine.png');
+        url('/images/chef-cusine-min.png');
     animation: fade2 10s infinite;
 }
 

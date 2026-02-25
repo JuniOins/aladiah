@@ -457,7 +457,7 @@ en allant vers <strong>l’hôpital des policiers</strong>.</p>
 © 2026 – ALADIAH Restaurant
 <div class="social-icons">
 <a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-tiktok"></i></a>
+<a href="https://vm.tiktok.com/ZS9exVcNYoJF6-7rFN9/"><i class="fab fa-tiktok"></i></a>
 </div>
 </footer>
 

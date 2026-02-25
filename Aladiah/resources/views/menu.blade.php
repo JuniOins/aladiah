@@ -228,7 +228,7 @@ footer .social-icons a:hover{color:var(--gold);}
 <!-- PETIT DEJEUNER -->
 <div class="menu-card">
 <h3>Petit Déjeuner</h3>
-<div class="menu-image-wrapper"><img src="/images/menus/petit-dejeuner.jpg"></div>
+<div class="menu-image-wrapper"><img src="/images/menus/petit-dejeuner-min.jpg"></div>
 <input type="checkbox" id="pd" class="menu-toggle">
 <label for="pd" class="menu-label">Voir les plats</label>
 <div class="menu-list">
@@ -244,7 +244,7 @@ footer .social-icons a:hover{color:var(--gold);}
 <!-- ENTREES -->
 <div class="menu-card">
 <h3>Entrées</h3>
-<div class="menu-image-wrapper"><img src="/images/menus/entré.jpg"></div>
+<div class="menu-image-wrapper"><img src="/images/menus/entré-min.jpg"></div>
 <input type="checkbox" id="entree" class="menu-toggle">
 <label for="entree" class="menu-label">Voir les plats</label>
 <div class="menu-list">
@@ -262,7 +262,7 @@ footer .social-icons a:hover{color:var(--gold);}
 <!-- SPÉCIALITÉS AFRICAINES -->
 <div class="menu-card">
 <h3>Spécialités Africaines</h3>
-<div class="menu-image-wrapper"><img src="/images/bomi.png"></div>
+<div class="menu-image-wrapper"><img src="/images/bomi-min.png"></div>
 <input type="checkbox" id="africain" class="menu-toggle">
 <label for="africain" class="menu-label">Voir les plats</label>
 <div class="menu-list">
@@ -289,7 +289,7 @@ footer .social-icons a:hover{color:var(--gold);}
 <!-- SPÉCIALITÉS EUROPÉENNES -->
 <div class="menu-card">
 <h3>Spécialités Européennes</h3>
-<div class="menu-image-wrapper"><img src="/images/menus/spécialité-européenne.webp"></div>
+<div class="menu-image-wrapper"><img src="/images/menus/spécialité-européenne-min.webp"></div>
 <input type="checkbox" id="euro" class="menu-toggle">
 <label for="euro" class="menu-label">Voir les plats</label>
 <div class="menu-list">
@@ -307,7 +307,7 @@ footer .social-icons a:hover{color:var(--gold);}
 <h3>Accompagnements</h3>
 <div class="menu-image-wrapper">
 <div class="double-images">
-<img src="/images/menus/accompagnement.jpg">
+<img src="/images/menus/accompagnement-min.jpg">
 <img src="/images/menus/riz au gras.jpg">
 </div>
 </div>
@@ -331,7 +331,7 @@ footer .social-icons a:hover{color:var(--gold);}
 <div class="menu-card">
   <h3>Desserts & Boissons</h3>
   <div class="menu-image-wrapper">
-    <img src="/images/menus/boissons.jpg" alt="Boissons">
+    <img src="/images/menus/boissons-min.jpg" alt="Boissons">
   </div>
   <input type="checkbox" id="dessert" class="menu-toggle">
   <label for="dessert" class="menu-label">Voir la carte</label>
